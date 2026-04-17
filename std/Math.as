@@ -9,6 +9,11 @@ class Math
 	static var SQRT1_2: Number = 0.7071067811865476;
 	static var SQRT2: Number = 1.4142135623730951;
 	
+	function Math()
+	{
+		
+	}
+	
 	static function abs(value: Number): Number
 	{
 		return value < 0 ? -value : value;
