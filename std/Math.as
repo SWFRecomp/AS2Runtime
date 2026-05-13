@@ -19,8 +19,16 @@ class Math
 		return value < 0 ? -value : value;
 	}
 	
-	//~ static function min(value1: Number, value2: Number): Number;
-	//~ static function max(value1: Number, value2: Number): Number;
+	static function min(value1: Number, value2: Number): Number
+	{
+		return value1 < value2 ? value1 : value2;
+	}
+	
+	static function max(value1: Number, value2: Number): Number
+	{
+		return value1 < value2 ? value2 : value1;
+	}
+	
 	//~ static function sin(value: Number): Number;
 	//~ static function cos(value: Number): Number;
 	//~ static function atan2(value1: Number, value2: Number): Number;
