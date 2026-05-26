@@ -2,6 +2,7 @@ class RecompInclude
 {
 	function RecompInclude()
 	{
-		var m = new Math();
+		var o = new Math();
+		o = new Key();
 	}
 }
