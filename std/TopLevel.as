@@ -26,6 +26,10 @@ intrinsic class TopLevel
 	
 	static function recompGetLastKey(): Number;
 	static function recompSetDisplayScale(s: Number): Void;
+	static function recompSin(value: Number): Number;
+	static function recompCos(value: Number): Number;
+	
+	static function recompColorTransform(obj: Object, rm: Number, gm: Number, bm: Number, am: Number, ro: Number, go: Number, bo: Number, ao: Number): Void;
 	
 	// private members are not stored into _global, they need special compilation opcodes
 	

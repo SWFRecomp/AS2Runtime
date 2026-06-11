@@ -29,8 +29,16 @@ class Math
 		return value1 < value2 ? value2 : value1;
 	}
 	
-	//~ static function sin(value: Number): Number;
-	//~ static function cos(value: Number): Number;
+	static function sin(value: Number): Number
+	{
+		return recompSin(value);
+	}
+	
+	static function cos(value: Number): Number
+	{
+		return recompCos(value);
+	}
+	
 	//~ static function atan2(value1: Number, value2: Number): Number;
 	//~ static function tan(value: Number): Number;
 	//~ static function exp(value: Number): Number;
