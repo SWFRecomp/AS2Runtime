@@ -28,8 +28,15 @@ intrinsic class TopLevel
 	static function recompSetDisplayScale(s: Number): Void;
 	static function recompSin(value: Number): Number;
 	static function recompCos(value: Number): Number;
+	static function recompAtan2(value1: Number, value2: Number): Number;
+	static function recompSqrt(value: Number): Number;
 	
 	static function recompColorTransform(obj: Object, rm: Number, gm: Number, bm: Number, am: Number, ro: Number, go: Number, bo: Number, ao: Number): Void;
+	
+	static function recompSITLInit(): Void;
+	static function recompSITLReadPacket(params: Object): Boolean;
+	static function recompSITLSendJSON(json: String): Void;
+	static function recompJSON(): Void;
 	
 	// private members are not stored into _global, they need special compilation opcodes
 	
@@ -38,7 +45,7 @@ intrinsic class TopLevel
 	private static function trace(value): Void;
 	private static function eval(e: String);
 	private static function getURL(url: String, target: String, vars: String): Void;
-	private static function getTimer():Number;
+	private static function getTimer(): Number;
 	private static function random(n: Number): Number;
 	private static function int(o: Object): Number;
 	private static function string(o: Object): String;

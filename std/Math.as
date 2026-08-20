@@ -39,11 +39,20 @@ class Math
 		return recompCos(value);
 	}
 	
-	//~ static function atan2(value1: Number, value2: Number): Number;
+	static function atan2(value1: Number, value2: Number): Number
+	{
+		return recompAtan2(value1, value2);
+	}
+	
 	//~ static function tan(value: Number): Number;
 	//~ static function exp(value: Number): Number;
 	//~ static function log(value: Number): Number;
-	//~ static function sqrt(value: Number): Number;
+	
+	static function sqrt(value: Number): Number
+	{
+		return recompSqrt(value);
+	}
+	
 	//~ static function round(value: Number): Number;
 	//~ static function random(): Number;
 	//~ static function floor(value: Number): Number;
