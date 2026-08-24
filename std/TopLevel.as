@@ -35,7 +35,8 @@ intrinsic class TopLevel
 	
 	static function recompSITLInit(): Void;
 	static function recompSITLReadPacket(params: Object): Boolean;
-	static function recompSITLSendJSON(json: String): Void;
+	static function recompSITLSendJSON(time: Number): Void;
+	static function recompSITLSendSensor(range: Number, orientation: Number): Void;
 	static function recompJSON(): Void;
 	
 	// private members are not stored into _global, they need special compilation opcodes
