@@ -31,6 +31,7 @@ class TextField
 	var bottomScroll: Number;
 	var condenseWhite: Boolean;
 	var embedFonts: Boolean;
+	var recompFont: String;
 	var hscroll: Number;
 	var html: Boolean;
 	var htmlText: String;
@@ -43,6 +44,7 @@ class TextField
 	var restrict: String;
 	var scroll: Number;
 	var selectable: Boolean;
+	var recompSize: Number;
 	var tabEnabled: Boolean;
 	var tabIndex: Number;
 	var text: String;
@@ -66,7 +68,7 @@ class TextField
 	//~ function replaceSel(newText: String): Void;
 	//~ function getTextFormat(beginIndex: Number, endIndex: Number): TextFormat;
 	
-	function setTextFormat(): Void
+	function setTextFormat(tf: TextFormat): Void
 	{
 		
 	}
@@ -76,7 +78,9 @@ class TextField
 	
 	function setNewTextFormat(tf: TextFormat): Void
 	{
-		
+		textColor = tf.color;
+		recompFont = tf.font;
+		recompSize = tf.size;
 	}
 	
 	//~ function getDepth(): Number;
