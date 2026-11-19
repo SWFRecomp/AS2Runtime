@@ -65,7 +65,12 @@ class TextField
 	//~ function replaceText(beginIndex: Number, endIndex: Number, newText: String): Void;
 	//~ function replaceSel(newText: String): Void;
 	//~ function getTextFormat(beginIndex: Number, endIndex: Number): TextFormat;
-	//~ function setTextFormat(): Void;
+	
+	function setTextFormat(): Void
+	{
+		
+	}
+	
 	//~ function removeTextField(): Void;
 	//~ function getNewTextFormat(): TextFormat;
 	
