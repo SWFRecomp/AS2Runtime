@@ -24,6 +24,7 @@ intrinsic class TopLevel
 	
 	static function MMExecute(expr: String);
 	
+	static function recompAbort(): Void;
 	static function recompGetLastKey(): Number;
 	static function recompSetDisplayScale(s: Number): Void;
 	static function recompSin(value: Number): Number;
